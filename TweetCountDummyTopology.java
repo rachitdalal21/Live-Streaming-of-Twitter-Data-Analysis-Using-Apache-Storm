@@ -1,4 +1,4 @@
-/*
+
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
 import org.apache.storm.StormSubmitter;
@@ -19,9 +19,8 @@ public class TweetCountDummyTopology {
         LossyCounting lca = new LossyCounting(args[2]);
         TweetCountBolt tcount = new TweetCountBolt(args[1]);
 
-*/
 /*LossyCounting lca = new LossyCounting(args[1]);
-        TweetCountBolt tcount = new TweetCountBolt(args[0]);*//*
+        TweetCountBolt tcount = new TweetCountBolt(args[0]);*/
 
 
         TopologyBuilder builder  = new TopologyBuilder();
@@ -33,12 +32,12 @@ public class TweetCountDummyTopology {
 
        // builder.setBolt(REPORT_BOLT_ID, reportBolt).globalGrouping(COUNT_BOLT_ID);
         Config conf = new Config();
-*/
+        
 /*LocalCluster lc = new LocalCluster();
         lc.submitTopology(TOPOLOGY_NAME, conf, builder.createTopology());
         Thread.sleep(500000);
         lc.killTopology(TOPOLOGY_NAME);
-        lc.shutdown();*//*
+        lc.shutdown();*/
 
 
 
@@ -46,4 +45,3 @@ public class TweetCountDummyTopology {
                 conf, builder.createTopology());
     }
 }
-*/
